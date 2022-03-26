@@ -1,0 +1,22 @@
+.container{
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+.card-blue{
+    width:400px;
+    height: 80px;
+    background-color: #53C0DD;
+    transform: skewY(45deg) translateY(-420px);
+}
+.card-orange{
+    width:400px;
+    height:800px;
+    background-color: #F48B29;
+}
+
+
+.cardImages {
+    width:50px;
+    height:50px;
+}
