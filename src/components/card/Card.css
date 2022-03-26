@@ -1,22 +1,39 @@
-.container{
-    display:flex;
-    align-items:center;
-    flex-direction: column;
-}
-.card-blue{
-    width:400px;
-    height: 80px;
-    background-color: #53C0DD;
-    transform: skewY(45deg) translateY(-420px);
-}
-.card-orange{
-    width:400px;
-    height:800px;
-    background-color: #F48B29;
-}
+.cards-area-container {
+    height: 41rem;
+    width: 25rem;
+    background-color: #f48b29;
+    margin: 50px auto;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "top" "bottom";
+    overflow: hidden;
 
+     }
 
-.cardImages {
-    width:50px;
-    height:50px;
-}
+ .bars {
+     height: 41rem;
+     width: 5rem;
+     background-color: #53c1de;
+     position: relative;
+     transform: rotate(-45deg);
+     top: -40rem;
+     left: 10rem;
+
+ }
+
+ .language-title {
+     grid-area: top;
+     text-align: center;
+     color: white;
+     font-weight: bold;
+     font-size: 2rem;
+     margin-top:1rem;
+ }
+
+ .cards-container {
+     grid-area: bottom;
+     padding: 1rem;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+ }

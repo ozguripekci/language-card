@@ -1,16 +1,12 @@
-
-import './App.css';
-import Card from './components/card/Card';
-import data from './helper/data';
+import "./App.css";
+import Header from "./components/header/Header";
+import Card from "./components/card/Card";
 
 function App() {
   return (
-    <div className="App">
-      <p> {'>>'} App.js is working</p>
-      
-      <Card cardsData={data}/>
-
-
+    <div className="main-container">
+      <Header />
+      <Card />
     </div>
   );
 }

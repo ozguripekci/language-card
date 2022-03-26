@@ -1,45 +1,19 @@
+import { languages } from "../../helpers/data";
+import Item from "../item/Item";
+import "./Card.css";
 
-import React from 'react'
-import './Card.css'
-
-const Card = ({cardsData}) => {
+const Card = () => {
   return (
-    
-
-    <div className="container">
-        <p> {'>>'} Card.js is working</p>
-
-        {cardsData.map(element => {
-            const {id, name, img, options} = element;
-            return (
-                <div className="card" key={id}>
-                    <button onClick={options}>
-                        <h5>{name}</h5>
-                        <img className="cardImages" src={img}/>
-                        <div className="info">
-                            return (<p>{options}</p>)
-                        
-                    </div>
-                    </button>
-                    
-                </div>
-            )
-        })
-
-        }
-        
-
-        <div className="card-blue">
-
-        </div>
-
-        <div className="card-orange">
-
-        </div>
-
-
+    <div className="cards-area-container">
+      <div className="bars"></div>
+      <h1 className="language-title">Languages</h1>
+      <div className="cards-container">
+        {languages.map((item, index) => {
+          return <Item card={item} key={index} />;
+        })}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
